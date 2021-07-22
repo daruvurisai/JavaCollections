@@ -2,20 +2,19 @@ package com.LinkedList.Collections;
 
 import java.util.LinkedList;
 
-/*Write a Java program to append the specified element to the end of a linked list. */
-public class Program1 {
-	
-	//Main Method 
+/*Write a Java program to iterate through all elements in a linked list.*/
+public class Program2 {
+
 	public static void main(String[] args) {
-		//Implementing linked list
 		LinkedList<String> llist = new LinkedList<>();
 		llist.add("Banana");
 		llist.add("Apple");
 		llist.add("Kiwi");
 		llist.add(null);
 		
-		//Print the linked list 
-		System.out.println(llist);
+		//Iterate through all elements
+		for(String e : llist) {
+			System.out.println(e);
+		}
 	}
-	
 }
